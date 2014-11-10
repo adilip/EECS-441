@@ -10,13 +10,24 @@
 
 @interface XYZDetailsView ()
 
+@property NSString *myString;
+
 @end
 
 @implementation XYZDetailsView
 
+- (void)setString:(NSString*)input {
+    NSLog(@"Got it running!");
+    self.myString = input;
+}
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    //self.myString = @"This is a test";
+    //self.myString  = @"hehho";
+    self.detailsLabel.text = self.myString;
+    
 }
 
 - (void)didReceiveMemoryWarning {

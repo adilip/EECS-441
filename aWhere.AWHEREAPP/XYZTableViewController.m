@@ -7,6 +7,7 @@
 //
 
 #import "XYZTableViewController.h"
+#import "XYZDetailsView.h"
 
 @interface XYZTableViewController ()
 
@@ -65,6 +66,15 @@
     return cell;
 }
 
+
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
+    NSString *cellText = cell.textLabel.text;
+    NSLog(cellText);
+    //perform the segue
+    [self performSegueWithIdentifier:@"toBarDetail" sender:self];
+}
+
 /*
 // Override to support conditional editing of the table view.
 - (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
@@ -99,14 +109,23 @@
 }
 */
 
-/*
+
 #pragma mark - Navigation
 
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
     // Get the new view controller using [segue destinationViewController].
+    if ([[segue identifier] isEqualToString:@"toBarDetail"]) {
+        NSLog(@"At least we got here!");
+        XYZDetailsView *v = [segue destinationViewController];
+        NSString *myString = @"hello world";
+        [v setString:myString];
+    }
+    else {
+        NSLog(@"This wasn't supposed to happen!");
+    }
     // Pass the selected object to the new view controller.
 }
-*/
+
 
 @end

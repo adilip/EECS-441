@@ -9,5 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface XYZDetailsView : UIViewController
-
+@property (weak, nonatomic) IBOutlet UILabel *detailsLabel;
+- (void)setString:(NSString*)input;
 @end
