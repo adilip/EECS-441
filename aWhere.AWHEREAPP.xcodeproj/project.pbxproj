@@ -38,6 +38,13 @@
 		5BB9674619FD9ABC006450B4 /* Syncopate-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 5BB9672A19FD9ABC006450B4 /* Syncopate-Regular.ttf */; };
 		5BBDDDA219FDF5E0000D5540 /* home-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBDDDA019FDF5E0000D5540 /* home-7.png */; };
 		5BBDDDA319FDF5E0000D5540 /* list-fat-7.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BBDDDA119FDF5E0000D5540 /* list-fat-7.png */; };
+		5BC6FB401A103D2200504D30 /* Ashleys.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6FB391A103D2200504D30 /* Ashleys.jpeg */; };
+		5BC6FB411A103D2200504D30 /* Charleys.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6FB3A1A103D2200504D30 /* Charleys.jpeg */; };
+		5BC6FB421A103D2200504D30 /* Heidelberg.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6FB3B1A103D2200504D30 /* Heidelberg.gif */; };
+		5BC6FB431A103D2200504D30 /* Necto.gif in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6FB3C1A103D2200504D30 /* Necto.gif */; };
+		5BC6FB441A103D2200504D30 /* Ricks.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6FB3D1A103D2200504D30 /* Ricks.jpeg */; };
+		5BC6FB451A103D2200504D30 /* Rush.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6FB3E1A103D2200504D30 /* Rush.jpeg */; };
+		5BC6FB461A103D2200504D30 /* Skeeps.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 5BC6FB3F1A103D2200504D30 /* Skeeps.jpeg */; };
 		EE7AF48819F08F69006DA125 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7AF48719F08F69006DA125 /* main.m */; };
 		EE7AF48B19F08F69006DA125 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7AF48A19F08F69006DA125 /* AppDelegate.m */; };
 		EE7AF48E19F08F69006DA125 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7AF48D19F08F69006DA125 /* ViewController.m */; };
@@ -105,6 +112,13 @@
 		5BB9672A19FD9ABC006450B4 /* Syncopate-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Syncopate-Regular.ttf"; sourceTree = "<group>"; };
 		5BBDDDA019FDF5E0000D5540 /* home-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "home-7.png"; sourceTree = "<group>"; };
 		5BBDDDA119FDF5E0000D5540 /* list-fat-7.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "list-fat-7.png"; sourceTree = "<group>"; };
+		5BC6FB391A103D2200504D30 /* Ashleys.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ashleys.jpeg; sourceTree = "<group>"; };
+		5BC6FB3A1A103D2200504D30 /* Charleys.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Charleys.jpeg; sourceTree = "<group>"; };
+		5BC6FB3B1A103D2200504D30 /* Heidelberg.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Heidelberg.gif; sourceTree = "<group>"; };
+		5BC6FB3C1A103D2200504D30 /* Necto.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = Necto.gif; sourceTree = "<group>"; };
+		5BC6FB3D1A103D2200504D30 /* Ricks.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Ricks.jpeg; sourceTree = "<group>"; };
+		5BC6FB3E1A103D2200504D30 /* Rush.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Rush.jpeg; sourceTree = "<group>"; };
+		5BC6FB3F1A103D2200504D30 /* Skeeps.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = Skeeps.jpeg; sourceTree = "<group>"; };
 		EE7AF48219F08F69006DA125 /* aWhere.AWHEREAPP.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = aWhere.AWHEREAPP.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EE7AF48619F08F69006DA125 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		EE7AF48719F08F69006DA125 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -183,6 +197,7 @@
 		5BB9670919FD9ABC006450B4 /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				5BC6FB381A103D2200504D30 /* barThumbnails */,
 				5BBDDD9F19FDF5E0000D5540 /* tabIcons */,
 				5BB9670A19FD9ABC006450B4 /* icon */,
 				5BB9672119FD9ABC006450B4 /* launchImage */,
@@ -262,6 +277,20 @@
 				5BBDDDA119FDF5E0000D5540 /* list-fat-7.png */,
 			);
 			path = tabIcons;
+			sourceTree = "<group>";
+		};
+		5BC6FB381A103D2200504D30 /* barThumbnails */ = {
+			isa = PBXGroup;
+			children = (
+				5BC6FB391A103D2200504D30 /* Ashleys.jpeg */,
+				5BC6FB3A1A103D2200504D30 /* Charleys.jpeg */,
+				5BC6FB3B1A103D2200504D30 /* Heidelberg.gif */,
+				5BC6FB3C1A103D2200504D30 /* Necto.gif */,
+				5BC6FB3D1A103D2200504D30 /* Ricks.jpeg */,
+				5BC6FB3E1A103D2200504D30 /* Rush.jpeg */,
+				5BC6FB3F1A103D2200504D30 /* Skeeps.jpeg */,
+			);
+			path = barThumbnails;
 			sourceTree = "<group>";
 		};
 		EE7AF47919F08F69006DA125 = {
@@ -426,12 +455,16 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5BC6FB421A103D2200504D30 /* Heidelberg.gif in Resources */,
 				5BB9673919FD9ABC006450B4 /* Icon-Small-50.png in Resources */,
+				5BC6FB461A103D2200504D30 /* Skeeps.jpeg in Resources */,
 				5BB9672B19FD9ABC006450B4 /* Contents.json in Resources */,
 				5BB9674119FD9ABC006450B4 /* iPhonePortrait@Retina4.png in Resources */,
 				5BB9673A19FD9ABC006450B4 /* Icon-Small-50@2x.png in Resources */,
+				5BC6FB411A103D2200504D30 /* Charleys.jpeg in Resources */,
 				5BB9673819FD9ABC006450B4 /* Icon-72@2x.png in Resources */,
 				5BB9674619FD9ABC006450B4 /* Syncopate-Regular.ttf in Resources */,
+				5BC6FB431A103D2200504D30 /* Necto.gif in Resources */,
 				5BB9674319FD9ABC006450B4 /* iPhonePortrait@RetinaHD5.5.png in Resources */,
 				5BB9673C19FD9ABC006450B4 /* Icon@2x.png in Resources */,
 				5BB9672C19FD9ABC006450B4 /* Icon-40.png in Resources */,
@@ -441,15 +474,18 @@
 				5BBDDDA319FDF5E0000D5540 /* list-fat-7.png in Resources */,
 				5BB9673D19FD9ABC006450B4 /* iTunesArtwork.png in Resources */,
 				EE7AF49619F08F69006DA125 /* LaunchScreen.xib in Resources */,
+				5BC6FB441A103D2200504D30 /* Ricks.jpeg in Resources */,
 				5BB9674219FD9ABC006450B4 /* iPhonePortrait@RetinaHD4.7.png in Resources */,
 				5BB9673F19FD9ABC006450B4 /* iPhoneLandscape@RetinaHD5.5.png in Resources */,
 				5BB9672D19FD9ABC006450B4 /* Icon-40@2x.png in Resources */,
 				5BB9672F19FD9ABC006450B4 /* Icon-60@2x.png in Resources */,
+				5BC6FB451A103D2200504D30 /* Rush.jpeg in Resources */,
 				5BB9674419FD9ABC006450B4 /* LICENSE.txt in Resources */,
 				5BB9674519FD9ABC006450B4 /* Syncopate-Bold.ttf in Resources */,
 				5BB9673119FD9ABC006450B4 /* Icon-76.png in Resources */,
 				5BB9673B19FD9ABC006450B4 /* Icon.png in Resources */,
 				5B69A29F19FEEF52004E9E3D /* Main.storyboard in Resources */,
+				5BC6FB401A103D2200504D30 /* Ashleys.jpeg in Resources */,
 				5BB9673019FD9ABC006450B4 /* Icon-60@3x.png in Resources */,
 				5BBDDDA219FDF5E0000D5540 /* home-7.png in Resources */,
 				5BB9673619FD9ABC006450B4 /* Icon-60.png in Resources */,
