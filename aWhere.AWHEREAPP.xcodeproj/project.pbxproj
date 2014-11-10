@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B5D516E1A111A080052C741 /* Bar.m in Sources */ = {isa = PBXBuildFile; fileRef = 5B5D516D1A111A080052C741 /* Bar.m */; };
+		5B5D51721A11250A0052C741 /* Back Button.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D51711A11250A0052C741 /* Back Button.jpg */; };
+		5B5D51771A1131C90052C741 /* Inactive Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D51731A1131C90052C741 /* Inactive Star.png */; };
+		5B5D51781A1131C90052C741 /* Active Star.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D51741A1131C90052C741 /* Active Star.png */; };
+		5B5D51791A1131C90052C741 /* Active Dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D51751A1131C90052C741 /* Active Dollar.png */; };
+		5B5D517A1A1131C90052C741 /* Inactive Dollar.png in Resources */ = {isa = PBXBuildFile; fileRef = 5B5D51761A1131C90052C741 /* Inactive Dollar.png */; };
 		5B69A29F19FEEF52004E9E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B69A29D19FEEF52004E9E3D /* Main.storyboard */; };
 		5BB9672B19FD9ABC006450B4 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BB9670D19FD9ABC006450B4 /* Contents.json */; };
 		5BB9672C19FD9ABC006450B4 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB9670E19FD9ABC006450B4 /* Icon-40.png */; };
@@ -81,6 +87,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B5D516C1A1119800052C741 /* Bar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Bar.h; sourceTree = "<group>"; };
+		5B5D516D1A111A080052C741 /* Bar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Bar.m; sourceTree = "<group>"; };
+		5B5D51711A11250A0052C741 /* Back Button.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = "Back Button.jpg"; sourceTree = "<group>"; };
+		5B5D51731A1131C90052C741 /* Inactive Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inactive Star.png"; sourceTree = "<group>"; };
+		5B5D51741A1131C90052C741 /* Active Star.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Active Star.png"; sourceTree = "<group>"; };
+		5B5D51751A1131C90052C741 /* Active Dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Active Dollar.png"; sourceTree = "<group>"; };
+		5B5D51761A1131C90052C741 /* Inactive Dollar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Inactive Dollar.png"; sourceTree = "<group>"; };
 		5B69A29E19FEEF52004E9E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = aWhere.AWHEREAPP/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BB9670D19FD9ABC006450B4 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		5BB9670E19FD9ABC006450B4 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
@@ -273,6 +286,11 @@
 		5BBDDD9F19FDF5E0000D5540 /* tabIcons */ = {
 			isa = PBXGroup;
 			children = (
+				5B5D51731A1131C90052C741 /* Inactive Star.png */,
+				5B5D51741A1131C90052C741 /* Active Star.png */,
+				5B5D51751A1131C90052C741 /* Active Dollar.png */,
+				5B5D51761A1131C90052C741 /* Inactive Dollar.png */,
+				5B5D51711A11250A0052C741 /* Back Button.jpg */,
 				5BBDDDA019FDF5E0000D5540 /* home-7.png */,
 				5BBDDDA119FDF5E0000D5540 /* list-fat-7.png */,
 			);
@@ -329,6 +347,8 @@
 			children = (
 				EE7AF48919F08F69006DA125 /* AppDelegate.h */,
 				EE7AF48A19F08F69006DA125 /* AppDelegate.m */,
+				5B5D516C1A1119800052C741 /* Bar.h */,
+				5B5D516D1A111A080052C741 /* Bar.m */,
 				EE7AF48C19F08F69006DA125 /* ViewController.h */,
 				EE7AF4DD19F09046006DA125 /* GoogleMaps.framework */,
 				EE7AF4DF19F090B4006DA125 /* GoogleMaps.bundle */,
@@ -468,6 +488,7 @@
 				5BB9674319FD9ABC006450B4 /* iPhonePortrait@RetinaHD5.5.png in Resources */,
 				5BB9673C19FD9ABC006450B4 /* Icon@2x.png in Resources */,
 				5BB9672C19FD9ABC006450B4 /* Icon-40.png in Resources */,
+				5B5D51721A11250A0052C741 /* Back Button.jpg in Resources */,
 				5BB9673519FD9ABC006450B4 /* Icon-Small@3x.png in Resources */,
 				5BB9674019FD9ABC006450B4 /* iPhonePortrait@2x.png in Resources */,
 				5BB9673319FD9ABC006450B4 /* Icon-Small.png in Resources */,
@@ -478,6 +499,7 @@
 				5BB9674219FD9ABC006450B4 /* iPhonePortrait@RetinaHD4.7.png in Resources */,
 				5BB9673F19FD9ABC006450B4 /* iPhoneLandscape@RetinaHD5.5.png in Resources */,
 				5BB9672D19FD9ABC006450B4 /* Icon-40@2x.png in Resources */,
+				5B5D51781A1131C90052C741 /* Active Star.png in Resources */,
 				5BB9672F19FD9ABC006450B4 /* Icon-60@2x.png in Resources */,
 				5BC6FB451A103D2200504D30 /* Rush.jpeg in Resources */,
 				5BB9674419FD9ABC006450B4 /* LICENSE.txt in Resources */,
@@ -486,6 +508,8 @@
 				5BB9673B19FD9ABC006450B4 /* Icon.png in Resources */,
 				5B69A29F19FEEF52004E9E3D /* Main.storyboard in Resources */,
 				5BC6FB401A103D2200504D30 /* Ashleys.jpeg in Resources */,
+				5B5D517A1A1131C90052C741 /* Inactive Dollar.png in Resources */,
+				5B5D51791A1131C90052C741 /* Active Dollar.png in Resources */,
 				5BB9673019FD9ABC006450B4 /* Icon-60@3x.png in Resources */,
 				5BBDDDA219FDF5E0000D5540 /* home-7.png in Resources */,
 				5BB9673619FD9ABC006450B4 /* Icon-60.png in Resources */,
@@ -494,6 +518,7 @@
 				5BB9673E19FD9ABC006450B4 /* iTunesArtwork@2x.png in Resources */,
 				5BB9673219FD9ABC006450B4 /* Icon-76@2x.png in Resources */,
 				5BB9673719FD9ABC006450B4 /* Icon-72.png in Resources */,
+				5B5D51771A1131C90052C741 /* Inactive Star.png in Resources */,
 				EE7AF4E019F090B4006DA125 /* GoogleMaps.bundle in Resources */,
 				5BB9673419FD9ABC006450B4 /* Icon-Small@2x.png in Resources */,
 			);
@@ -514,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EEC906AB1A0B9A4300C6AAE0 /* XYZSearchViewController.m in Sources */,
+				5B5D516E1A111A080052C741 /* Bar.m in Sources */,
 				EE7AF48E19F08F69006DA125 /* ViewController.m in Sources */,
 				EEC906A21A0B909100C6AAE0 /* XYZDetailsView.m in Sources */,
 				EEC906A51A0B912C00C6AAE0 /* XYZTableViewController.m in Sources */,

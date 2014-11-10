@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface XYZTableViewController : UITableViewController
+@property (nonatomic, strong) NSMutableArray *bars;
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue;
 
