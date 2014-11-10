@@ -13,6 +13,7 @@
 @end
 
 @implementation XYZSearchViewController
+@synthesize resultLabel;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
@@ -43,4 +44,9 @@
 }
 */
 
+- (IBAction)searchButton:(UIButton *)sender {
+    int addedNumbers = 1 + 2;
+    
+    NSLog(@"The Sum of 1 + 2 is %d",addedNumbers);
+    self.resultLabel.text = [NSString stringWithFormat:@"%i",addedNumbers];}
 @end

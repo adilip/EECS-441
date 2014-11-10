@@ -10,9 +10,20 @@
 
 @interface XYZTableViewController ()
 
+@property NSMutableArray *barListItems;
+
 @end
 
 @implementation XYZTableViewController
+
+- (void)initBarListData {
+    NSString *bar1 = @"Ashley's Bar";
+    [self.barListItems addObject:bar1];
+    NSString *bar2 = @"Charley's Bar";
+    [self.barListItems addObject:bar2];
+    NSString *bar3 = @"Blue Leprechaun";
+    [self.barListItems addObject:bar3];
+}
 
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
@@ -21,7 +32,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+    self.barListItems = [[NSMutableArray alloc] init];
+    [self initBarListData];
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
@@ -35,30 +47,23 @@
 }
 
 #pragma mark - Table view data source
-/*
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView {
-#warning Potentially incomplete method implementation.
     // Return the number of sections.
-    return 0;
+    return 1;
 }
-*/
-/*
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-#warning Incomplete method implementation.
     // Return the number of rows in the section.
-    return 0;
+    return [self.barListItems count];
 }
-*/
 
-/*
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    
+    NSString *name = [self.barListItems objectAtIndex:indexPath.row];
+    cell.textLabel.text = name;
     return cell;
 }
-*/
 
 /*
 // Override to support conditional editing of the table view.
