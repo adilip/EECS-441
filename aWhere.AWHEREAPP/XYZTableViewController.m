@@ -8,6 +8,7 @@
 
 #import "XYZTableViewController.h"
 #import "XYZDetailsView.h"
+#import "XYZBarData.h"
 
 @interface XYZTableViewController ()
 
@@ -17,12 +18,40 @@
 
 @implementation XYZTableViewController
 
+/*
+ @property NSString *name;
+ @property NSString *price;
+ @property NSString *rating;
+ @property NSString *category;
+ @property NSString *open_time;
+ @property NSString *close_time;
+ @property NSString *location;
+ */
+
 - (void)initBarListData {
-    NSString *bar1 = @"Ashley's Bar";
+    XYZBarData *bar1 = [[XYZBarData alloc] init];
+    bar1.name = @"Ashley's Pub";
+    bar1.price = @"$3.00";
+    bar1.rating = @"3";
+    bar1.category = @"Pub";
+    bar1.open_time = @"7:00am";
+    bar1.close_time = @"10:00pm";
     [self.barListItems addObject:bar1];
-    NSString *bar2 = @"Charley's Bar";
+    XYZBarData *bar2 = [[XYZBarData alloc] init];
+    bar2.name = @"Charley's Bar";
+    bar2.price = @"$5.00";
+    bar2.rating = @"4";
+    bar2.category = @"Bar";
+    bar2.open_time = @"10:00am";
+    bar2.close_time = @"11:00pm";
     [self.barListItems addObject:bar2];
-    NSString *bar3 = @"Blue Leprechaun";
+    XYZBarData *bar3 = [[XYZBarData alloc] init];
+    bar3.name = @"Rick's American Cafe";
+    bar3.price = @"$2.00";
+    bar3.rating = @"2";
+    bar3.category = @"Club";
+    bar3.open_time = @"7:00pm";
+    bar3.close_time = @"2:00am";
     [self.barListItems addObject:bar3];
 }
 
@@ -61,8 +90,8 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
     
     // Configure the cell...
-    NSString *name = [self.barListItems objectAtIndex:indexPath.row];
-    cell.textLabel.text = name;
+    XYZBarData *bar = [self.barListItems objectAtIndex:indexPath.row];
+    cell.textLabel.text = bar.name;
     return cell;
 }
 
@@ -118,8 +147,9 @@
     if ([[segue identifier] isEqualToString:@"toBarDetail"]) {
         NSLog(@"At least we got here!");
         XYZDetailsView *v = [segue destinationViewController];
-        NSString *myString = @"hello world";
-        [v setString:myString];
+        XYZBarData *thisBar = [[XYZBarData alloc] init];
+        thisBar.name = @"Testing that this still works";
+        [v populateBar:thisBar];
     }
     else {
         NSLog(@"This wasn't supposed to happen!");

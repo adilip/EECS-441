@@ -20,13 +20,13 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "aWhere.AWHEREAPP/XYZTableViewController.m"
-            timestampString = "437293164.877355"
+            timestampString = "437357721.118453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "19"
-            endingLineNumber = "19"
-            landmarkName = "-initBarListData"
-            landmarkType = "5">
+            startingLineNumber = "21"
+            endingLineNumber = "21"
+            landmarkName = "@implementation XYZTableViewController"
+            landmarkType = "3">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -36,11 +36,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "aWhere.AWHEREAPP/XYZTableViewController.m"
-            timestampString = "437293164.877355"
+            timestampString = "437357721.118453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "28"
-            endingLineNumber = "28"
+            startingLineNumber = "57"
+            endingLineNumber = "57"
             landmarkName = "-unwindToList:"
             landmarkType = "5">
          </BreakpointContent>
@@ -52,11 +52,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "aWhere.AWHEREAPP/XYZTableViewController.m"
-            timestampString = "437293164.877355"
+            timestampString = "437357721.118453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "23"
-            endingLineNumber = "23"
+            startingLineNumber = "46"
+            endingLineNumber = "46"
             landmarkName = "-initBarListData"
             landmarkType = "5">
          </BreakpointContent>
@@ -68,11 +68,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "aWhere.AWHEREAPP/XYZTableViewController.m"
-            timestampString = "437293164.877355"
+            timestampString = "437357721.118453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "91"
+            endingLineNumber = "91"
             landmarkName = "-tableView:cellForRowAtIndexPath:"
             landmarkType = "5">
          </BreakpointContent>
@@ -84,11 +84,11 @@
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "aWhere.AWHEREAPP/XYZTableViewController.m"
-            timestampString = "437293112.411752"
+            timestampString = "437357721.118453"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "122"
-            endingLineNumber = "122"
+            startingLineNumber = "152"
+            endingLineNumber = "152"
             landmarkName = "-prepareForSegue:sender:"
             landmarkType = "5">
          </BreakpointContent>

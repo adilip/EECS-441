@@ -68,6 +68,7 @@
 		EEC906A21A0B909100C6AAE0 /* XYZDetailsView.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC906A11A0B909100C6AAE0 /* XYZDetailsView.m */; };
 		EEC906A51A0B912C00C6AAE0 /* XYZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC906A41A0B912C00C6AAE0 /* XYZTableViewController.m */; };
 		EEC906AB1A0B9A4300C6AAE0 /* XYZSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC906AA1A0B9A4300C6AAE0 /* XYZSearchViewController.m */; };
+		EECD1AD71A11896B004016D3 /* XYZBarData.m in Sources */ = {isa = PBXBuildFile; fileRef = EECD1AD61A11896B004016D3 /* XYZBarData.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -151,6 +152,8 @@
 		EEC906A41A0B912C00C6AAE0 /* XYZTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZTableViewController.m; sourceTree = "<group>"; };
 		EEC906A91A0B9A4300C6AAE0 /* XYZSearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZSearchViewController.h; path = ../XYZSearchViewController.h; sourceTree = "<group>"; };
 		EEC906AA1A0B9A4300C6AAE0 /* XYZSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZSearchViewController.m; path = ../XYZSearchViewController.m; sourceTree = "<group>"; };
+		EECD1AD51A11896B004016D3 /* XYZBarData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZBarData.h; sourceTree = "<group>"; };
+		EECD1AD61A11896B004016D3 /* XYZBarData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZBarData.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -336,6 +339,8 @@
 				EE7AF49219F08F69006DA125 /* Images.xcassets */,
 				5B69A29D19FEEF52004E9E3D /* Main.storyboard */,
 				EEC906A91A0B9A4300C6AAE0 /* XYZSearchViewController.h */,
+				EECD1AD51A11896B004016D3 /* XYZBarData.h */,
+				EECD1AD61A11896B004016D3 /* XYZBarData.m */,
 				EEC906AA1A0B9A4300C6AAE0 /* XYZSearchViewController.m */,
 				EEC906A31A0B912C00C6AAE0 /* XYZTableViewController.h */,
 				EEC906A41A0B912C00C6AAE0 /* XYZTableViewController.m */,
@@ -518,6 +523,7 @@
 				EEC906A21A0B909100C6AAE0 /* XYZDetailsView.m in Sources */,
 				EEC906A51A0B912C00C6AAE0 /* XYZTableViewController.m in Sources */,
 				EE7AF48B19F08F69006DA125 /* AppDelegate.m in Sources */,
+				EECD1AD71A11896B004016D3 /* XYZBarData.m in Sources */,
 				EE7AF48819F08F69006DA125 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

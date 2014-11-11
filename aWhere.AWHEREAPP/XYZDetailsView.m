@@ -16,9 +16,11 @@
 
 @implementation XYZDetailsView
 
-- (void)setString:(NSString*)input {
-    NSLog(@"Got it running!");
-    self.myString = input;
+
+- (void)populateBar:(XYZBarData*)input {
+    NSLog(@"There should be a string now");
+    NSLog(input.name);
+    self.myString = input.name;
 }
 
 - (void)viewDidLoad {
@@ -26,6 +28,7 @@
     // Do any additional setup after loading the view.
     //self.myString = @"This is a test";
     //self.myString  = @"hehho";
+    NSLog(@"View is now loading");
     self.detailsLabel.text = self.myString;
     
 }
