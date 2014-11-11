@@ -11,5 +11,8 @@
 
 @interface XYZDetailsView : UIViewController
 @property (weak, nonatomic) IBOutlet UILabel *detailsLabel;
+@property (weak, nonatomic) IBOutlet UILabel *rating;
+@property (weak, nonatomic) IBOutlet UILabel *price;
+@property (weak, nonatomic) IBOutlet UILabel *category;
 - (void)populateBar:(XYZBarData*)input;
 @end
