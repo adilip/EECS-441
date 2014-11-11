@@ -14,5 +14,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *rating;
 @property (weak, nonatomic) IBOutlet UILabel *price;
 @property (weak, nonatomic) IBOutlet UILabel *category;
+@property (weak, nonatomic) IBOutlet UILabel *openTime;
+@property (weak, nonatomic) IBOutlet UILabel *closeTime;
+@property (weak, nonatomic) IBOutlet UILabel *location;
 - (void)populateBar:(XYZBarData*)input;
 @end

@@ -13,6 +13,7 @@
 @interface XYZTableViewController ()
 
 @property NSMutableArray *barListItems;
+@property XYZBarData *selectedBar;
 
 @end
 
@@ -99,7 +100,8 @@
 -(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView cellForRowAtIndexPath:indexPath];
     NSString *cellText = cell.textLabel.text;
-    NSLog(cellText);
+    //NSLog(cellText);
+    self.selectedBar = [self.barListItems objectAtIndex:indexPath.row];
     //perform the segue
     [self performSegueWithIdentifier:@"toBarDetail" sender:self];
 }
@@ -148,7 +150,7 @@
         NSLog(@"At least we got here!");
         XYZDetailsView *v = [segue destinationViewController];
         XYZBarData *thisBar = [[XYZBarData alloc] init];
-        thisBar.name = @"Testing that this still works";
+        thisBar = self.selectedBar;
         [v populateBar:thisBar];
     }
     else {
