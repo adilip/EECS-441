@@ -9,6 +9,7 @@
 #import "XYZTableViewController.h"
 #import "XYZDetailsView.h"
 #import "XYZBarData.h"
+#import "BarTableCell.h"
 
 @interface XYZTableViewController ()
 
@@ -29,61 +30,6 @@
  @property NSString *location;
  */
 
-- (void)initBarListData {
-    XYZBarData *bar1 = [[XYZBarData alloc] init];
-    bar1.name = @"Ashley's Pub";
-    bar1.price = @"$3.00";
-    bar1.rating = @"3.1";
-    bar1.category = @"Pub";
-    bar1.open_time = @"7:00am";
-    bar1.close_time = @"10:00pm";
-    bar1.location = @"2534 Madison St";
-    [self.barListItems addObject:bar1];
-    XYZBarData *bar2 = [[XYZBarData alloc] init];
-    bar2.name = @"Charley's Bar";
-    bar2.price = @"$5.00";
-    bar2.rating = @"4.2";
-    bar2.category = @"Bar";
-    bar2.open_time = @"10:00am";
-    bar2.close_time = @"11:00pm";
-    bar2.location = @"2242 W Maple Rd";
-    [self.barListItems addObject:bar2];
-    XYZBarData *bar3 = [[XYZBarData alloc] init];
-    bar3.name = @"Rick's American Cafe";
-    bar3.price = @"$2.00";
-    bar3.rating = @"2.3";
-    bar3.category = @"Club";
-    bar3.open_time = @"7:00pm";
-    bar3.close_time = @"2:00am";
-    bar3.location = @"1234 E Stadium Blvd";
-    [self.barListItems addObject:bar3];
-    XYZBarData *bar4 = [[XYZBarData alloc] init];
-    bar4.name = @"Rush Street";
-    bar4.price = @"$8.00";
-    bar4.rating = @"4.3";
-    bar4.category = @"Club";
-    bar4.open_time = @"7:00pm";
-    bar4.close_time = @"2:00am";
-    bar4.location = @"1119 Ypsitucky Canyon";
-    [self.barListItems addObject:bar4];
-    XYZBarData *bar5 = [[XYZBarData alloc] init];
-    bar5.name = @"NECTO";
-    bar5.price = @"$0.00";
-    bar5.rating = @"0";
-    bar5.category = @"Club";
-    bar5.open_time = @"7:00pm";
-    bar5.close_time = @"2:00am";
-    bar5.location = @"3434 Privet Dr";
-    [self.barListItems addObject:bar5];
-    [self.barListItems addObject:bar2];
-    [self.barListItems addObject:bar1];
-    [self.barListItems addObject:bar3];
-    [self.barListItems addObject:bar4];
-    [self.barListItems addObject:bar2];
-    [self.barListItems addObject:bar5];
-    [self.barListItems addObject:bar1];
-}
-
 - (IBAction)unwindToList:(UIStoryboardSegue *)segue
 {
     
@@ -91,13 +37,17 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    self.barListItems = [[NSMutableArray alloc] init];
-    [self initBarListData];
+    BarDataManager *sharedManager = [BarDataManager sharedManager];
+    self.barListItems = sharedManager.data;
     // Uncomment the following line to preserve selection between presentations.
     // self.clearsSelectionOnViewWillAppear = NO;
     
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
+    
+    // Initialize thumbnails
+    //thumbnails = [NSArray arrayWithObjects:@"club_icon.png", @"bar_icon.png", nil];
+
 }
 
 - (void)didReceiveMemoryWarning {
@@ -116,12 +66,34 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
-    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
-    
+    //UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"ListPrototypeCell" forIndexPath:indexPath];
+    BarTableCell *cell = (BarTableCell*)[tableView dequeueReusableCellWithIdentifier:@"BarTableCell"];
+    if (cell == nil)
+    {
+        NSArray *nib = [[NSBundle mainBundle] loadNibNamed:@"BarTableCell" owner:self options:nil];
+        cell = [nib objectAtIndex:0];
+    }
     // Configure the cell...
     XYZBarData *bar = [self.barListItems objectAtIndex:indexPath.row];
-    cell.textLabel.text = bar.name;
+    //cell.textLabel.text = bar.name;
+    cell.nameLabel.text = bar.name;
+    cell.locationLabel.text = bar.location;
+    cell.typeLabel.text = bar.category;
+    if ([bar.category  isEqual: @"Pub"]) {
+        cell.imageView.image = [UIImage imageNamed:@"pub_icon.png"];
+    }
+    else if ([bar.category isEqual: @"Club"]) {
+        cell.imageView.image = [UIImage imageNamed:@"club_icon.png"];
+    }
+    else if ([bar.category isEqual: @"Bar"]) {
+        cell.imageView.image = [UIImage imageNamed:@"bar_icon.png"];
+    }
     return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    return 78;
 }
 
 

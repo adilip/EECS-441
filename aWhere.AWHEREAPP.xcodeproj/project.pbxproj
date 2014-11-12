@@ -69,6 +69,12 @@
 		EEC906A51A0B912C00C6AAE0 /* XYZTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC906A41A0B912C00C6AAE0 /* XYZTableViewController.m */; };
 		EEC906AB1A0B9A4300C6AAE0 /* XYZSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EEC906AA1A0B9A4300C6AAE0 /* XYZSearchViewController.m */; };
 		EECD1AD71A11896B004016D3 /* XYZBarData.m in Sources */ = {isa = PBXBuildFile; fileRef = EECD1AD61A11896B004016D3 /* XYZBarData.m */; };
+		EECD1AE21A138A9E004016D3 /* BarDataManager.m in Sources */ = {isa = PBXBuildFile; fileRef = EECD1AE11A138A9E004016D3 /* BarDataManager.m */; };
+		EECD1AE41A1391C6004016D3 /* bar_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EECD1AE31A1391C6004016D3 /* bar_icon.png */; };
+		EECD1AE61A1391DC004016D3 /* club_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EECD1AE51A1391DC004016D3 /* club_icon.png */; };
+		EECD1AE81A1393B9004016D3 /* pub_icon.png in Resources */ = {isa = PBXBuildFile; fileRef = EECD1AE71A1393B9004016D3 /* pub_icon.png */; };
+		EECD1AEA1A1394BB004016D3 /* BarTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = EECD1AE91A1394BB004016D3 /* BarTableCell.xib */; };
+		EECD1AED1A139630004016D3 /* BarTableCell.m in Sources */ = {isa = PBXBuildFile; fileRef = EECD1AEC1A139630004016D3 /* BarTableCell.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -154,6 +160,14 @@
 		EEC906AA1A0B9A4300C6AAE0 /* XYZSearchViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZSearchViewController.m; path = ../XYZSearchViewController.m; sourceTree = "<group>"; };
 		EECD1AD51A11896B004016D3 /* XYZBarData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZBarData.h; sourceTree = "<group>"; };
 		EECD1AD61A11896B004016D3 /* XYZBarData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZBarData.m; sourceTree = "<group>"; };
+		EECD1AE01A138A9E004016D3 /* BarDataManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarDataManager.h; sourceTree = "<group>"; };
+		EECD1AE11A138A9E004016D3 /* BarDataManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarDataManager.m; sourceTree = "<group>"; };
+		EECD1AE31A1391C6004016D3 /* bar_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bar_icon.png; sourceTree = "<group>"; };
+		EECD1AE51A1391DC004016D3 /* club_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = club_icon.png; sourceTree = "<group>"; };
+		EECD1AE71A1393B9004016D3 /* pub_icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pub_icon.png; sourceTree = "<group>"; };
+		EECD1AE91A1394BB004016D3 /* BarTableCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = BarTableCell.xib; sourceTree = "<group>"; };
+		EECD1AEB1A139630004016D3 /* BarTableCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BarTableCell.h; sourceTree = "<group>"; };
+		EECD1AEC1A139630004016D3 /* BarTableCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BarTableCell.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -330,6 +344,9 @@
 		EE7AF48419F08F69006DA125 /* aWhere.AWHEREAPP */ = {
 			isa = PBXGroup;
 			children = (
+				EECD1AE71A1393B9004016D3 /* pub_icon.png */,
+				EECD1AE51A1391DC004016D3 /* club_icon.png */,
+				EECD1AE31A1391C6004016D3 /* bar_icon.png */,
 				EE7AF48919F08F69006DA125 /* AppDelegate.h */,
 				EE7AF48A19F08F69006DA125 /* AppDelegate.m */,
 				EE7AF4DD19F09046006DA125 /* GoogleMaps.framework */,
@@ -341,9 +358,14 @@
 				EEC906A91A0B9A4300C6AAE0 /* XYZSearchViewController.h */,
 				EECD1AD51A11896B004016D3 /* XYZBarData.h */,
 				EECD1AD61A11896B004016D3 /* XYZBarData.m */,
+				EECD1AE01A138A9E004016D3 /* BarDataManager.h */,
+				EECD1AE11A138A9E004016D3 /* BarDataManager.m */,
 				EEC906AA1A0B9A4300C6AAE0 /* XYZSearchViewController.m */,
 				EEC906A31A0B912C00C6AAE0 /* XYZTableViewController.h */,
 				EEC906A41A0B912C00C6AAE0 /* XYZTableViewController.m */,
+				EECD1AE91A1394BB004016D3 /* BarTableCell.xib */,
+				EECD1AEB1A139630004016D3 /* BarTableCell.h */,
+				EECD1AEC1A139630004016D3 /* BarTableCell.m */,
 				EEC906A01A0B909100C6AAE0 /* XYZDetailsView.h */,
 				EEC906A11A0B909100C6AAE0 /* XYZDetailsView.m */,
 				EE7AF49419F08F69006DA125 /* LaunchScreen.xib */,
@@ -470,11 +492,14 @@
 				5BB9673819FD9ABC006450B4 /* Icon-72@2x.png in Resources */,
 				5BB9674619FD9ABC006450B4 /* Syncopate-Regular.ttf in Resources */,
 				5BC6FB431A103D2200504D30 /* Necto.gif in Resources */,
+				EECD1AE81A1393B9004016D3 /* pub_icon.png in Resources */,
 				5BB9674319FD9ABC006450B4 /* iPhonePortrait@RetinaHD5.5.png in Resources */,
 				5BB9673C19FD9ABC006450B4 /* Icon@2x.png in Resources */,
 				5BB9672C19FD9ABC006450B4 /* Icon-40.png in Resources */,
+				EECD1AEA1A1394BB004016D3 /* BarTableCell.xib in Resources */,
 				5BB9673519FD9ABC006450B4 /* Icon-Small@3x.png in Resources */,
 				5BB9674019FD9ABC006450B4 /* iPhonePortrait@2x.png in Resources */,
+				EECD1AE61A1391DC004016D3 /* club_icon.png in Resources */,
 				5BB9673319FD9ABC006450B4 /* Icon-Small.png in Resources */,
 				5BBDDDA319FDF5E0000D5540 /* list-fat-7.png in Resources */,
 				5BB9673D19FD9ABC006450B4 /* iTunesArtwork.png in Resources */,
@@ -490,6 +515,7 @@
 				5BB9673119FD9ABC006450B4 /* Icon-76.png in Resources */,
 				5BB9673B19FD9ABC006450B4 /* Icon.png in Resources */,
 				5B69A29F19FEEF52004E9E3D /* Main.storyboard in Resources */,
+				EECD1AE41A1391C6004016D3 /* bar_icon.png in Resources */,
 				5BC6FB401A103D2200504D30 /* Ashleys.jpeg in Resources */,
 				5BB9673019FD9ABC006450B4 /* Icon-60@3x.png in Resources */,
 				5BBDDDA219FDF5E0000D5540 /* home-7.png in Resources */,
@@ -521,8 +547,10 @@
 				EEC906AB1A0B9A4300C6AAE0 /* XYZSearchViewController.m in Sources */,
 				EE7AF48E19F08F69006DA125 /* XYZMapViewController.m in Sources */,
 				EEC906A21A0B909100C6AAE0 /* XYZDetailsView.m in Sources */,
+				EECD1AED1A139630004016D3 /* BarTableCell.m in Sources */,
 				EEC906A51A0B912C00C6AAE0 /* XYZTableViewController.m in Sources */,
 				EE7AF48B19F08F69006DA125 /* AppDelegate.m in Sources */,
+				EECD1AE21A138A9E004016D3 /* BarDataManager.m in Sources */,
 				EECD1AD71A11896B004016D3 /* XYZBarData.m in Sources */,
 				EE7AF48819F08F69006DA125 /* main.m in Sources */,
 			);
