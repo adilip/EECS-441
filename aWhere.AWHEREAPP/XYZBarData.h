@@ -7,6 +7,8 @@
 //
 
 #import <Foundation/Foundation.h>
+#import <GoogleMaps/GoogleMaps.h>
+#import <CoreLocation/CoreLocation.h>
 
 @interface XYZBarData : NSObject
 
@@ -17,5 +19,6 @@
 @property NSString *open_time;
 @property NSString *close_time;
 @property NSString *location;
+@property GMSMarker *marker;
 
 @end
