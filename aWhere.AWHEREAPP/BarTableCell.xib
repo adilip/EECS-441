@@ -41,7 +41,7 @@
                 <outlet property="thumbnailImageView" destination="2UH-eC-gEC" id="gFp-o2-t1B"/>
                 <outlet property="typeLabel" destination="mbY-9z-sxY" id="agq-X9-zFs"/>
             </connections>
-            <point key="canvasLocation" x="228" y="155.5"/>
+            <point key="canvasLocation" x="212" y="148.5"/>
         </tableViewCell>
     </objects>
 </document>
