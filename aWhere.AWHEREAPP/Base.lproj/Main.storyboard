@@ -252,6 +252,7 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="barImage" destination="oPo-9Y-eJJ" id="eiz-y3-ZQg"/>
                         <outlet property="category" destination="IG2-1D-RTS" id="ONL-Hb-k6K"/>
                         <outlet property="closeTime" destination="IB2-S0-Nct" id="xfs-ae-tZR"/>
                         <outlet property="detailsLabel" destination="fwI-e6-QI9" id="kSO-58-RHC"/>

@@ -10,6 +10,16 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import <CoreLocation/CoreLocation.h>
 
+typedef enum {
+    Skeeps = 0,
+    Ricks,
+    Necto,
+    Rush,
+    Charleys,
+    Ashleys,
+    Heidelberg
+} Bar_Thumbnail;
+
 @interface XYZBarData : NSObject
 
 @property NSString *name;
@@ -20,5 +30,8 @@
 @property NSString *close_time;
 @property NSString *location;
 @property GMSMarker *marker;
+@property (nonatomic, assign) Bar_Thumbnail thumbnail;
+
+- (UIImage *) barImage;
 
 @end

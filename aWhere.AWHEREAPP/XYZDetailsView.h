@@ -17,5 +17,6 @@
 @property (weak, nonatomic) IBOutlet UILabel *openTime;
 @property (weak, nonatomic) IBOutlet UILabel *closeTime;
 @property (weak, nonatomic) IBOutlet UILabel *location;
+@property (nonatomic, weak) IBOutlet UIImageView *barImage;
 - (void)populateBar:(XYZBarData*)input;
 @end

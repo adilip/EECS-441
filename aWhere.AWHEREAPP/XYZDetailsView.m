@@ -34,6 +34,7 @@
     self.openTime.text = self.thisBar.open_time;
     self.closeTime.text = self.thisBar.close_time;
     self.location.text = self.thisBar.location;
+    self.barImage.image = self.thisBar.barImage;
     
 }
 

@@ -31,6 +31,7 @@
     bar1.marker.title = @"Ashley's";
     bar1.marker.snippet = @"Pub\n338 S. State St";
     bar1.marker.map = self.mapView_;
+    bar1.thumbnail = Ashleys;
     [sharedData.data addObject:bar1];
     
     XYZBarData *bar2 = [[XYZBarData alloc] init];
@@ -46,6 +47,7 @@
     bar2.marker.title = @"Good Time Charley's";
     bar2.marker.snippet = @"Pub\n1140 S. University St";
     bar2.marker.map = self.mapView_;
+    bar2.thumbnail = Charleys;
     [sharedData.data addObject:bar2];
     
     XYZBarData *bar3 = [[XYZBarData alloc] init];
@@ -61,6 +63,7 @@
     bar3.marker.title = @"Rick's American Cafe";
     bar3.marker.snippet = @"Club\n611 Church St";
     bar3.marker.map = self.mapView_;
+    bar3.thumbnail = Ricks;
     [sharedData.data addObject:bar3];
     
     XYZBarData *bar4 = [[XYZBarData alloc] init];
@@ -76,6 +79,7 @@
     bar4.marker.title = @"Rush Street";
     bar4.marker.snippet = @"Lounge\n314 S. Main St";
     bar4.marker.map = self.mapView_;
+    bar4.thumbnail = Rush;
     [sharedData.data addObject:bar4];
     
     XYZBarData *bar5 = [[XYZBarData alloc] init];
@@ -91,6 +95,7 @@
     bar5.marker.title = @"Necto";
     bar5.marker.snippet = @"Club\n516 E. Liberty St";
     bar5.marker.map = self.mapView_;
+    bar5.thumbnail = Necto;
     [sharedData.data addObject:bar5];
     
     XYZBarData *bar6 = [[XYZBarData alloc] init];
@@ -106,6 +111,7 @@
     bar6.marker.title = @"Scorekeeper's Bar and Grill";
     bar6.marker.snippet = @"Sports Bar\n310 Maynard St";
     bar6.marker.map = self.mapView_;
+    bar6.thumbnail = Skeeps;
     [sharedData.data addObject:bar6];
     
     // some more false ones to fill out the table
