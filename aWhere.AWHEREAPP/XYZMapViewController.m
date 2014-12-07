@@ -2,6 +2,7 @@
 #import <GoogleMaps/GoogleMaps.h>
 #import <CoreLocation/CoreLocation.h>
 #import "XYZBarData.h"
+#import <FacebookSDK/FacebookSDK.h>
 
 @import CoreLocation;
 
@@ -153,6 +154,10 @@
     
     // initialize the locations
     [self initLocList];
+    // Facebook login
+    FBLoginView *loginView = [[FBLoginView alloc] init];
+    loginView.center = self.view.center;
+    [self.view addSubview:loginView];
 
 
     //Heidelberg Marker

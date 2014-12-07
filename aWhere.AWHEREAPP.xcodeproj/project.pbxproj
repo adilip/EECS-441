@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B48A80F1A33E970004763CB /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5B48A80E1A33E96F004763CB /* FacebookSDK.framework */; };
 		5B69A29F19FEEF52004E9E3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5B69A29D19FEEF52004E9E3D /* Main.storyboard */; };
 		5BB9672B19FD9ABC006450B4 /* Contents.json in Resources */ = {isa = PBXBuildFile; fileRef = 5BB9670D19FD9ABC006450B4 /* Contents.json */; };
 		5BB9672C19FD9ABC006450B4 /* Icon-40.png in Resources */ = {isa = PBXBuildFile; fileRef = 5BB9670E19FD9ABC006450B4 /* Icon-40.png */; };
@@ -88,6 +89,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B48A80E1A33E96F004763CB /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		5B69A29E19FEEF52004E9E3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = aWhere.AWHEREAPP/Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BB9670D19FD9ABC006450B4 /* Contents.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Contents.json; sourceTree = "<group>"; };
 		5BB9670E19FD9ABC006450B4 /* Icon-40.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon-40.png"; sourceTree = "<group>"; };
@@ -188,6 +190,7 @@
 				EE7AF4E419F0934C006DA125 /* CoreData.framework in Frameworks */,
 				EE7AF4E219F09346006DA125 /* AVFoundation.framework in Frameworks */,
 				EE7AF4DE19F09046006DA125 /* GoogleMaps.framework in Frameworks */,
+				5B48A80F1A33E970004763CB /* FacebookSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +347,7 @@
 		EE7AF48419F08F69006DA125 /* aWhere.AWHEREAPP */ = {
 			isa = PBXGroup;
 			children = (
+				5B48A80E1A33E96F004763CB /* FacebookSDK.framework */,
 				EECD1AE71A1393B9004016D3 /* pub_icon.png */,
 				EECD1AE51A1391DC004016D3 /* club_icon.png */,
 				EECD1AE31A1391C6004016D3 /* bar_icon.png */,

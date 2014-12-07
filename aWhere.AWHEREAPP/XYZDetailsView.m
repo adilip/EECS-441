@@ -43,6 +43,19 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(IBAction) openUber:(id)sender {
+    NSURL* uberURL = [NSURL URLWithString:@"uber://"];
+    NSURL* appStoreURL = [NSURL URLWithString:@"itms-apps://itunes.apple.com/us/app/uber/id368677368?mt=8"];
+    if ([[UIApplication sharedApplication] canOpenURL:uberURL])
+    {
+        [[UIApplication sharedApplication] openURL:uberURL];
+    }
+    else
+    {
+        [[UIApplication sharedApplication] openURL:appStoreURL];
+    }
+}
+
 /*
 #pragma mark - Navigation
 
