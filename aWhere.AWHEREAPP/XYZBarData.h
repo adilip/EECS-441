@@ -30,6 +30,7 @@ typedef enum {
 @property NSString *close_time;
 @property NSString *location;
 @property GMSMarker *marker;
+@property NSString *barDescription;
 @property (nonatomic, assign) Bar_Thumbnail thumbnail;
 
 - (UIImage *) barImage;

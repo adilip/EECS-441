@@ -18,6 +18,8 @@
 @property (weak, nonatomic) IBOutlet UILabel *closeTime;
 @property (weak, nonatomic) IBOutlet UILabel *location;
 @property (nonatomic, weak) IBOutlet UIImageView *barImage;
+@property (weak, nonatomic) IBOutlet UILabel *barDescription;
+
 - (void)populateBar:(XYZBarData*)input;
 -(IBAction) openUber:(id)sender;
 @end
