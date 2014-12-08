@@ -4,8 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6244"/>
     </dependencies>
     <customFonts key="customFonts">
+        <mutableArray key="Syncopate-Bold.ttf">
+            <string>Syncopate-Bold</string>
+        </mutableArray>
         <mutableArray key="Syncopate-Regular.ttf">
-            <string>Syncopate-Regular</string>
             <string>Syncopate-Regular</string>
             <string>Syncopate-Regular</string>
         </mutableArray>
@@ -21,7 +23,7 @@
                 <subviews>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Name" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="6fz-gQ-ihx">
                         <rect key="frame" x="110" y="9" width="196" height="21"/>
-                        <fontDescription key="fontDescription" name="Syncopate-Regular" family="Syncopate" pointSize="17"/>
+                        <fontDescription key="fontDescription" name="Syncopate-Bold" family="Syncopate" pointSize="17"/>
                         <color key="textColor" red="0.0" green="0.90980392160000001" blue="0.90980392160000001" alpha="1" colorSpace="calibratedRGB"/>
                         <nil key="highlightedColor"/>
                     </label>

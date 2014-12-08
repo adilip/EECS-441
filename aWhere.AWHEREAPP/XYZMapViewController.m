@@ -33,7 +33,7 @@
     bar1.marker.snippet = @"Pub\n338 S. State St";
     bar1.marker.map = self.mapView_;
     bar1.thumbnail = Ashleys;
-    bar1.barDescription = @"Test description";
+    bar1.barDescription = @"Test description. Test description. Test description. Test description.";
     [sharedData.data addObject:bar1];
     
     XYZBarData *bar2 = [[XYZBarData alloc] init];
@@ -50,7 +50,7 @@
     bar2.marker.snippet = @"Pub\n1140 S. University St";
     bar2.marker.map = self.mapView_;
     bar2.thumbnail = Charleys;
-    bar2.barDescription = @"Test description";
+    bar2.barDescription = @"Test description. Test description. Test description. Test description.";
     [sharedData.data addObject:bar2];
     
     XYZBarData *bar3 = [[XYZBarData alloc] init];
@@ -67,7 +67,7 @@
     bar3.marker.snippet = @"Club\n611 Church St";
     bar3.marker.map = self.mapView_;
     bar3.thumbnail = Ricks;
-    bar3.barDescription = @"Test description";
+    bar3.barDescription = @"Test description. Test description. Test description. Test description.";
     [sharedData.data addObject:bar3];
     
     XYZBarData *bar4 = [[XYZBarData alloc] init];
@@ -84,7 +84,7 @@
     bar4.marker.snippet = @"Lounge\n314 S. Main St";
     bar4.marker.map = self.mapView_;
     bar4.thumbnail = Rush;
-    bar4.barDescription = @"Test description";
+    bar4.barDescription = @"Test description. Test description. Test description. Test description.";
     [sharedData.data addObject:bar4];
     
     XYZBarData *bar5 = [[XYZBarData alloc] init];
@@ -101,7 +101,7 @@
     bar5.marker.snippet = @"Club\n516 E. Liberty St";
     bar5.marker.map = self.mapView_;
     bar5.thumbnail = Necto;
-    bar5.barDescription = @"Test description";
+    bar5.barDescription = @"Test description. Test description. Test description. Test description.";
     [sharedData.data addObject:bar5];
     
     XYZBarData *bar6 = [[XYZBarData alloc] init];
@@ -118,7 +118,7 @@
     bar6.marker.snippet = @"Sports Bar\n310 Maynard St";
     bar6.marker.map = self.mapView_;
     bar6.thumbnail = Skeeps;
-    bar6.barDescription = @"Test description";
+    bar6.barDescription = @"Test description. Test description. Test description. Test description.";
     [sharedData.data addObject:bar6];
     
     // some more false ones to fill out the table
@@ -161,10 +161,11 @@
     // initialize the locations
     [self initLocList];
     // Facebook login
+    /*
     FBLoginView *loginView = [[FBLoginView alloc] init];
     loginView.center = self.view.center;
     [self.view addSubview:loginView];
-
+     */
 
     //Heidelberg Marker
     /*

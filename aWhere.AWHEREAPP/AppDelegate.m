@@ -19,6 +19,10 @@
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
     [GMSServices provideAPIKey:@"AIzaSyAw32Q1Hly6r4iOJ5KxITjZMujYYubXXFU"];
     // Override point for customization after application launch.
+    [[UITabBar appearance] setTintColor:[UIColor colorWithRed:0.0f/255.0f
+                                                         green:232.0f/255.0f
+                                                          blue:232.0f/255.0f
+                                                         alpha:1.0f]];
     return YES;
 }
 
