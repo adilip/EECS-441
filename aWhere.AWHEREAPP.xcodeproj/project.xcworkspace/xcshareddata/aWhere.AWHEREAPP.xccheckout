@@ -11,7 +11,11 @@
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>F7960604B4C66DE743B0B13EA53F58E17049A0AF</key>
+<<<<<<< Updated upstream
 		<string>github.com:adilip/EECS-441.git</string>
+=======
+		<string>https://github.com/adilip/EECS-441.git</string>
+>>>>>>> Stashed changes
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>aWhere.AWHEREAPP.xcodeproj</string>

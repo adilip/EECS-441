@@ -442,11 +442,11 @@
 				TargetAttributes = {
 					EE7AF48119F08F69006DA125 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = M9A4HV826G;
+						DevelopmentTeam = 78Z7Z9675L;
 					};
 					EE7AF49A19F08F69006DA125 = {
 						CreatedOnToolsVersion = 6.0.1;
-						DevelopmentTeam = M9A4HV826G;
+						DevelopmentTeam = 78Z7Z9675L;
 						TestTargetID = EE7AF48119F08F69006DA125;
 					};
 				};
