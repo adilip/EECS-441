@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BarDataManager.h"
 
 @interface XYZTableViewController : UITableViewController
 @property (nonatomic, strong) NSMutableArray *bars;

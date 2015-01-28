@@ -11,6 +11,8 @@
 @interface XYZSearchViewController : UIViewController
 
 @property (nonatomic, weak) IBOutlet UISearchBar *searchBar;
+- (IBAction)searchButton:(UIButton *)sender;
+@property (weak, nonatomic) IBOutlet UILabel *resultLabel;
 
 
 @end

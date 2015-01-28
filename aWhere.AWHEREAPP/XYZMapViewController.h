@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import <GoogleMaps/GoogleMaps.h>
 #import <CoreLocation/CoreLocation.h>
+#import "BarDataManager.h"
 
 @interface ViewController : UIViewController <GMSMapViewDelegate>
 @property (strong, nonatomic) IBOutlet GMSMapView *mapView_;
